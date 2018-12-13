@@ -1,0 +1,9 @@
+.jumbotron {
+    background-image: url('../images/jumbotron-bg.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+#topNavbar {
+    opacity: 0.9;
+}
