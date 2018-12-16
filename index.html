@@ -11,12 +11,14 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>My first landing</title>
+    <title>The Simpsons | Mavesdev</title>
 </head>
 
 <body>
-    <nav id="topNavbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#">Yo!</a>
+    <nav id="topNavbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/brand-icon.png" width="35" height="35">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,38 +27,238 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-primary text-light mr-1" href="#aboutus"> About app </a>
+                    <a class="nav-link btn btn-primary mr-1 mt-1" href="#div-characters"> Characters </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-primary text-light mr-1" href="#aboutus"> About us </a>
+                    <a class="nav-link btn btn-primary mr-1 mt-1" href="#div-watch"> Watch </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-primary text-light mr-1" href="#aboutus"> Contacts </a>
+                    <a class="nav-link btn btn-primary mr-1 mt-1" href="#div-about"> About </a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="jumbotron">
-        <h1 class="text-light display-2">Lorem ipsum!</h1>
-        <h3 class="text-light">Sit amet consectetur adipisicing elit</h3>
-        <hr class="bg-light">
-        <h5 class="text-light">Rem blanditiis voluptate quod accusamus temporibus repudiandae nobis aliquid
-            eaque repellat veniam. Commodi?</h5>
-        <form class="form-inline justify-content-center mt-3">
-            <div class="input-group">
-                <input class="form-control" type="email" placeholder="youremail@domain.com">
-                <button type="submit" class="btn btn-primary ml-1">lorem</button>
-            </div>
-        </form>
+        <div id="jumbotron-panel" class="mt-3 p-3 border-0 rounded">
+            <h1 class="text-light display-2 mt-3">The Simpsons</h1>
+            <hr class="bg-light">
+            <h5 class="text-light">We constantly add new episodes to the site, so if you want to receive updates,
+                please
+                subscribe to our mailing list ;-)</h5>
+            <form class="form-inline justify-content-center mt-3">
+                <div class="input-group">
+                    <input class="form-control" type="email" placeholder="youremail@domain.com">
+                    <button type="submit" class="btn btn-primary ml-1">Go!</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="container">
 
-        <div class="card-group">
+        <div id="div-characters" class="row">
 
-            <div class="card">
-                <img class="card-img-top" src="images/jumbotron-bg1.jpg">
+            <div class="col-xs-12 col-md-6 col-lg-4 text-center panel border rounded">
+                <img class="img-fluid" src="images/homer.png">
+                <h4>Homer Simpson</h4>
+                <p class="lead"><strong>Homer Jay Simpson</strong> is a fictional character and the main protagonist of
+                    the American
+                    animated sitcom The Simpsons. He is voiced by Dan Castellaneta and first appeared on television,
+                    along with the rest of his family, in The Tracey Ullman Show short "Good Night" on April 19, 1987.
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 text-center panel border rounded">
+                <img class="img-fluid" src="images/marge.png">
+                <h4>Marge Simpson</h4>
+                <p class="lead"><strong>Marjorie Jacqueline "Marge" Simpson (née Bouvier)</strong> is a fictional
+                    character in the
+                    American animated sitcom The Simpsons and part of the eponymous family. She is voiced by Julie
+                    Kavner and first appeared on television in The Tracey Ullman Show short "Good Night" on April 19,
+                    1987.
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 text-center panel border rounded">
+                <img class="img-fluid" src="images/bart.png">
+                <h4>Bart Simpson</h4>
+                <p class="lead"><strong>Bartholomew JoJo "Bart" Simpson</strong> is a fictional character in the
+                    American animated
+                    television series The Simpsons and part of the Simpson family. He is voiced by Nancy Cartwright and
+                    first appeared on television in The Tracey Ullman Show short "Good Night" on April 19, 1987.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 text-center panel border rounded">
+                <img class="img-fluid" src="images/lisa.png">
+                <h4>Lisa Simpson</h4>
+                <p class="lead"><strong>Lisa Marie Simpson</strong> is a fictional character in the animated television
+                    series The
+                    Simpsons. She is the middle child and most intelligent of the Simpson family. Voiced by Yeardley
+                    Smith, Lisa was born as a character in The Tracey Ullman Show short "Good Night" on April 19, 1987.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 text-center panel border rounded">
+                <img class="img-fluid" src="images/ned.png">
+                <h4>Ned Flanders</h4>
+                <p class="lead"><strong>Nedward Flanders Jr.</strong> is a recurring fictional character in the
+                    animated television
+                    series The Simpsons. He is voiced by Harry Shearer, and first appeared in the series premiere
+                    episode "Simpsons Roasting on an Open Fire". He is the extremely religious, good-natured, cheery
+                    next-door neighbor to the Simpson family and is generally envied and loathed by Homer Simpson.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 text-center panel border rounded">
+                <img class="img-fluid" src="images/mr_burns.png">
+                <h4>Mr Burns</h4>
+                <p class="lead"><strong>Charles Montgomery Burns (a.k.a. C. Montgomery Burns and Monty Burns but
+                        usually
+                        referred to simply as Mr. Burns)</strong> is a recurring character of the animated television
+                    series The
+                    Simpsons. He is voiced by Harry Shearer. He is the evil, greedy and wealthy owner of the
+                    Springfield Nuclear Power Plant and is also Homer Simpson's boss.</p>
+            </div>
+        </div>
+
+        <div id="div-watch" class="row mt-2 border-0 rounded panel">
+            <div id="watch-menu" class="col-xs-6 col-md-4 mt-4">
+
+                <div id="seasons-accordion">
+                    <div class="card">
+                        <div class="card-header" id="seasonOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Season 1
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="seasonOne" data-parent="#seasons-accordion">
+                            <div class="card-body">
+                                <a class="btn btn-primary m-1" href="#">Episode 1</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 2</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 3</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 4</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 5</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 6</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="seasonTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Season 2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="seasonTwo" data-parent="#seasons-accordion">
+                            <div class="card-body">
+                                <a class="btn btn-primary m-1" href="#">Episode 1</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 2</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 3</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 4</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 5</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 6</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="seasonThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Season 3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="seasonThree" data-parent="#seasons-accordion">
+                            <div class="card-body">
+                                <a class="btn btn-primary m-1" href="#">Episode 1</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 2</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 3</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 4</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 5</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 6</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="seasonFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    Season 4
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="seasonFour" data-parent="#seasons-accordion">
+                            <div class="card-body">
+                                <a class="btn btn-primary m-1" href="#">Episode 1</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 2</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 3</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 4</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 5</a>
+                                <a class="btn btn-primary m-1" href="#">Episode 6</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="video" class="col-xs-6 col-md-8 text-center mt-4">
+                <iframe id="video" src="https://www.youtube.com/embed/YlQ6jAFYKhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="div-about" class="row p-3 mt-2 mb-3 panel text-center border-0 rounded">
+
+            <div class="col text-center">
+                <h3 class="display-4">About</h3>
+                <p>The Simpsons is an American animated sitcom created by Matt Groening for the Fox Broadcasting
+                    Company. The series is a satirical depiction of working-class life, epitomized by the Simpson
+                    family, which consists of Homer, Marge, Bart, Lisa, and Maggie. The show is set in the fictional
+                    town
+                    of Springfield and parodies American culture and society, television, and the human condition.
+                </p>
+                <p>
+                    The family was conceived by Groening shortly before a solicitation for a series of animated shorts
+                    with
+                    producer James L. Brooks. Groening created a dysfunctional family and named the characters after
+                    his
+                    own family members, substituting Bart for his own name. The shorts became a part of The Tracey
+                    Ullman
+                    Show on April 19, 1987. After three seasons, the sketch was developed into a half-hour prime time
+                    show
+                    and became Fox's first series to land in the Top 30 ratings in a season (1989–90).
+                </p>
+                <p>
+                    Since its debut on December 17, 1989, 649 episodes of The Simpsons have been broadcast. It is the
+                    longest-running American sitcom, and the longest-running American scripted primetime television
+                    series
+                    in terms of seasons and number of episodes. The Simpsons Movie, a feature-length film, was released
+                    in
+                    theaters worldwide on July 27, 2007, and grossed over $527 million. Then on October 30, 2007, a
+                    video
+                    game was released. Currently, The Simpsons is on its thirtieth season, which aired September 30,
+                    2018. The Simpsons will be renewed for a thirty-first season, with Al Jean completing a Treehouse
+                    of Horror XXIX script, though the date has yet to be announced.
+                </p>
+                <p>
+                    The Simpsons received acclaim throughout its first nine or ten seasons, which are
+                    generally considered its "Golden Age". Time named it the 20th century's best television series, and
+                    Erik Adams of The A.V. Club named it "television's crowning achievement regardless of format". On
+                    January 14, 2000, the Simpson family was awarded a star on the Hollywood Walk of Fame. It has won
+                    dozens of awards since it debuted as a series, including 31 Primetime Emmy Awards, 30 Annie Awards,
+                    and
+                    a Peabody Award. Homer's exclamatory catchphrase "D'oh!" has been adopted into the English
+                    language,
+                    while The Simpsons has influenced many other later adult-oriented animated sitcoms. However, it has
+                    also been criticized for a perceived decline in quality over the years.
+                </p>
             </div>
 
         </div>
